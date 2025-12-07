@@ -1,0 +1,54 @@
+CONFIDENTIAL PREDICTION MARKET - VIDEO DIALOGUE TRANSCRIPT
+
+This file contains the complete voice-over dialogue for the 1-minute demonstration video.
+All dialogue should be spoken clearly at a moderate pace for professional presentation.
+
+===============================================================================
+
+INTRODUCTION
+
+Welcome to the Confidential Prediction Market, an FHEVM example demonstrating privacy-preserving betting on Ethereum using Fully Homomorphic Encryption.
+
+===============================================================================
+
+PROBLEM STATEMENT
+
+Traditional prediction markets expose sensitive user data. Bet amounts, predictions, and trading patterns are all visible on-chain, enabling front-running and manipulation.
+
+===============================================================================
+
+ENCRYPTED TYPES DEMONSTRATION
+
+Our solution uses FHEVM encrypted types. The Bet struct contains euint32 for encrypted bet amounts and ebool for encrypted predictions. This ensures complete privacy for all user positions.
+
+===============================================================================
+
+ACCESS CONTROL PATTERN
+
+FHEVM requires explicit access control. We use FHE dot allowThis to grant the contract access to encrypted values, and FHE dot allow to permit users to retrieve their own encrypted data.
+
+===============================================================================
+
+LIVE DEMO WALKTHROUGH
+
+Let me show you how it works. First, connect your MetaMask wallet. Browse available markets and select one. Enter your bet amount and prediction. The data is encrypted before being sent to the blockchain. Confirm the transaction, and your encrypted bet is recorded on-chain.
+
+===============================================================================
+
+ON-CHAIN VERIFICATION
+
+The contract is deployed on Sepolia testnet and verified on Etherscan. You can see all transactions are recorded transparently, but individual bet details remain encrypted and private.
+
+===============================================================================
+
+CLOSING
+
+Learn more at our GitHub repository and try the live demo. Built for the Zama FHEVM Bounty December 2025.
+
+===============================================================================
+
+END OF DIALOGUE
+
+Total word count: Approximately 195 words
+Estimated speaking time: 55-60 seconds at moderate pace
+Voice tone: Professional, educational, enthusiastic
