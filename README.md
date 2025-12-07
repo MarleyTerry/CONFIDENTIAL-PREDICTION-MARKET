@@ -100,7 +100,7 @@ Sepolia testnet ETH
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/MarleyTerry/PredictionMarket
+git clone https://github.com/MarleyTerry/CONFIDENTIAL-PREDICTION-MARKET
 cd PredictionMarket
 
 # Install dependencies
@@ -135,9 +135,9 @@ npm run init-demo
 - **Explorer**: [View on Etherscan](https://sepolia.etherscan.io/address/0xdd3e74ad708CF61B14c83cF1826b5e3816e0de69)
 
 ### Live Application
-- **Web App**: [https://prediction-market-sepia.vercel.app/](https://prediction-market-sepia.vercel.app/)
-- **Demo Video**: Included in repository as `Video Demonstration.mp4`
-- **Transaction Proofs**: See `Transaction Screenshots.png` for on-chain verification
+- **Web App**: [https://confidential-prediction-market.vercel.app/](https://confidential-prediction-market.vercel.app/)
+- **Demo Video**: [Video](https://streamable.com/1pp8lk) Included in repository as `CONFIDENTIAL PREDICTION MARKET .mp4`
+ 
 
 ## 🧪 Testing & Validation
 
@@ -307,8 +307,8 @@ We welcome contributions to improve this FHEVM example:
 ## 📞 Contact & Resources
 
 ### Project Links
-- **GitHub Repository**: [https://github.com/MarleyTerry/PredictionMarket](https://github.com/MarleyTerry/PredictionMarket)
-- **Live Demo**: [https://prediction-market-sepia.vercel.app/](https://prediction-market-sepia.vercel.app/)
+- **GitHub Repository**: [https://github.com/MarleyTerry/CONFIDENTIAL-PREDICTION-MARKET](https://github.com/MarleyTerry/CONFIDENTIAL-PREDICTION-MARKET)
+- **Live Demo**: [https://confidential-prediction-market.vercel.app/](https://confidential-prediction-market.vercel.app/)
 - **Contract on Sepolia**: `0xdd3e74ad708CF61B14c83cF1826b5e3816e0de69`
 
 ### FHEVM Resources
