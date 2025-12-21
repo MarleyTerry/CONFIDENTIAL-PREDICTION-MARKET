@@ -2,6 +2,10 @@
 
 A privacy-preserving prediction market platform demonstrating Fully Homomorphic Encryption (FHE) on Ethereum, enabling users to place encrypted bets on future events while maintaining complete confidentiality of their positions and bet amounts.
 
+[Video](https://youtu.be/Gtvp5ziKYN8)
+
+[Live Demo](https://confidential-prediction-market.vercel.app/)
+
 ## Competition Entry - Zama FHEVM Bounty December 2025
 
 This comprehensive FHEVM example repository demonstrates:
