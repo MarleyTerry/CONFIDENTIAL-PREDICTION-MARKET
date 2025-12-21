@@ -4,7 +4,7 @@ A privacy-preserving prediction market platform demonstrating Fully Homomorphic 
 
 [Video](https://youtu.be/Gtvp5ziKYN8)
 
-[Live Demo](https://confidential-prediction-market.vercel.app/)
+[Live Demo](https://fhevm-privacy-preserving-delegated.vercel.app/)
 
 ## Competition Entry - Zama FHEVM Bounty December 2025
 
@@ -122,7 +122,7 @@ Sepolia testnet ETH (for deployment)
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/MarleyTerry/CONFIDENTIAL-PREDICTION-MARKET
+git clone https://github.com/LeonardAbbott/FHEVM-Privacy-Preserving-Delegated-Voting-System
 cd PredictionMarket
 
 # Install dependencies
@@ -197,8 +197,8 @@ npm run init-demo
 - **Explorer**: [View on Etherscan](https://sepolia.etherscan.io/address/0xdd3e74ad708CF61B14c83cF1826b5e3816e0de69)
 
 ### Live Application
-- **Web App**: [https://confidential-prediction-market.vercel.app/](https://confidential-prediction-market.vercel.app/)
-- **Demo Video**: [Video](https://streamable.com/1pp8lk) Included in repository as `CONFIDENTIAL PREDICTION MARKET .mp4`
+- **Web App**: [https://fhevm-privacy-preserving-delegated.vercel.app/](https://fhevm-privacy-preserving-delegated.vercel.app/)
+- **Demo Video**: [Video](https://youtu.be/Gtvp5ziKYN8) Included in repository as `CONFIDENTIAL PREDICTION MARKET .mp4`
  
 
 ## 🧪 Testing & Validation
@@ -445,14 +445,14 @@ This submission includes all required deliverables:
 
 ### 6. Demonstration
 - **Video**: `CONFIDENTIAL PREDICTION MARKET .mp4` - Complete demonstration
-- **Live Demo**: [https://confidential-prediction-market.vercel.app/](https://confidential-prediction-market.vercel.app/)
+- **Live Demo**: [https://fhevm-privacy-preserving-delegated.vercel.app/](https://fhevm-privacy-preserving-delegated.vercel.app/)
 - **Deployed Contract**: `0xdd3e74ad708CF61B14c83cF1826b5e3816e0de69` on Sepolia
 
 ## Contact & Resources
 
 ### Project Links
-- **GitHub Repository**: [https://github.com/MarleyTerry/CONFIDENTIAL-PREDICTION-MARKET](https://github.com/MarleyTerry/CONFIDENTIAL-PREDICTION-MARKET)
-- **Live Demo**: [https://confidential-prediction-market.vercel.app/](https://confidential-prediction-market.vercel.app/)
+- **GitHub Repository**: [https://github.com/LeonardAbbott/FHEVM-Privacy-Preserving-Delegated-Voting-System](https://github.com/LeonardAbbott/FHEVM-Privacy-Preserving-Delegated-Voting-System)
+- **Live Demo**: [https://fhevm-privacy-preserving-delegated.vercel.app/](https://fhevm-privacy-preserving-delegated.vercel.app/)
 - **Contract on Sepolia**: `0xdd3e74ad708CF61B14c83cF1826b5e3816e0de69`
 
 ### FHEVM Resources
