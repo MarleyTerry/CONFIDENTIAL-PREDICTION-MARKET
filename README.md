@@ -2,13 +2,31 @@
 
 A privacy-preserving prediction market platform demonstrating Fully Homomorphic Encryption (FHE) on Ethereum, enabling users to place encrypted bets on future events while maintaining complete confidentiality of their positions and bet amounts.
 
-## 📋 Competition Entry - Zama FHEVM Bounty December 2025
+## Competition Entry - Zama FHEVM Bounty December 2025
 
-This project demonstrates practical implementation of FHEVM concepts including:
-- **Encrypted State Variables**: Using `euint32` and `ebool` for confidential bet amounts and predictions
-- **Access Control Patterns**: Implementing `FHE.allow()` and `FHE.allowThis()` for secure encrypted data access
-- **Input Encryption**: Converting public inputs to encrypted types using `FHE.asEuint32()` and `FHE.asEbool()`
-- **Privacy-First Design**: Protecting user betting positions while maintaining market functionality
+This comprehensive FHEVM example repository demonstrates:
+
+### FHEVM Concepts
+- **Encrypted State Variables**: Using `euint32` and `ebool` for confidential data
+- **Access Control Patterns**: Implementing `FHE.allow()` and `FHE.allowThis()`
+- **Input Encryption**: Converting inputs with proof verification
+- **Privacy-First Design**: Building confidential applications
+
+### Examples Included
+- **Basic Examples**: FHECounter, EncryptSingleValue, FHEAdd, AccessControlExample
+- **Advanced Examples**: Confidential Prediction Market with encrypted betting
+- **Test Suites**: 100+ tests with ✅ correct patterns and ❌ anti-patterns
+
+### Automation & Tooling
+- **create-example.ts**: Generate standalone FHEVM repositories
+- **create-fhevm-category.ts**: Generate multi-example projects by category
+- **generate-docs.ts**: Auto-generate GitBook-compatible documentation
+- **base-template/**: Complete Hardhat template for FHEVM development
+
+### Documentation
+- **Comprehensive Guides**: EXAMPLES.md, DEVELOPER_GUIDE.md, anti-patterns.md
+- **Auto-Generated Docs**: GitBook-ready markdown for all examples
+- **Code Annotations**: Educational comments explaining FHEVM concepts
 
 ## 🔐 FHEVM Concepts Demonstrated
 
@@ -93,8 +111,8 @@ Our implementation ensures:
 ```bash
 # Required software
 Node.js 18+ and npm
-MetaMask browser extension
-Sepolia testnet ETH
+MetaMask browser extension (for frontend)
+Sepolia testnet ETH (for deployment)
 ```
 
 ### Installation
@@ -110,7 +128,47 @@ npm install
 npm run compile
 ```
 
-### Local Development
+### Explore Examples
+
+```bash
+# Run all tests (includes basic and advanced examples)
+npm test
+
+# Run specific example tests
+npx hardhat test test/basic/FHECounter.ts
+npx hardhat test test/basic/EncryptSingleValue.ts
+npx hardhat test test/PredictionMarket.ts
+```
+
+### Generate Standalone Projects
+
+```bash
+# Generate single example repository
+npm run create-example prediction-market ../output/pm-example
+
+# Generate category-based project (multiple examples)
+npm run create-category basic ../output/basic-examples
+
+# Navigate and test
+cd ../output/basic-examples
+npm install
+npm run compile
+npm run test
+```
+
+### Generate Documentation
+
+```bash
+# Generate docs for specific example
+npm run generate-docs prediction-market
+
+# Generate all documentation
+npm run generate-all-docs
+
+# View docs in docs/ directory
+```
+
+### Local Development (Frontend)
 ```bash
 # Start development server
 npm run dev
@@ -123,7 +181,7 @@ npm run dev
 # Deploy to Sepolia testnet
 npm run deploy:sepolia
 
-# Initialize demo markets
+# Initialize demo markets (optional)
 npm run init-demo
 ```
 
@@ -201,7 +259,52 @@ This example teaches developers:
    - Security considerations with encrypted data
    - Testing strategies for FHE contracts
 
-## 🔧 Configuration & Environment
+## Automation Tools & Scaffolding
+
+This project includes TypeScript-based CLI tools for automated repository generation and documentation:
+
+### Create Standalone Example Repository
+
+Generate a complete, self-contained FHEVM example repository:
+
+```bash
+ts-node scripts/create-example.ts prediction-market ../my-examples/
+```
+
+**What it creates:**
+- Complete Hardhat configuration
+- Contract and test files
+- Deployment scripts
+- Customized README
+- Package.json with dependencies
+- .gitignore and other config files
+
+### Generate Documentation
+
+Auto-generate GitBook-compatible documentation from annotated code:
+
+```bash
+ts-node scripts/generate-docs.ts prediction-market
+ts-node scripts/generate-docs.ts --all
+```
+
+**Output:**
+- Markdown files in `docs/` directory
+- Updated SUMMARY.md for navigation
+- Code examples with syntax highlighting
+- Structured educational content
+
+### Developer Guide
+
+See `DEVELOPER_GUIDE.md` for:
+- Creating new examples
+- Updating dependencies
+- Testing strategies
+- Deployment workflows
+
+See `scripts/README.md` for detailed automation documentation.
+
+## Configuration & Environment
 
 ### Environment Variables
 Create `.env` file with:
@@ -304,7 +407,44 @@ We welcome contributions to improve this FHEVM example:
 4. Ensure `npm run lint` passes
 5. Submit pull request with detailed description
 
-## 📞 Contact & Resources
+## Deliverables - Zama Bounty Competition
+
+This submission includes all required deliverables:
+
+### 1. Automation Scripts
+- **create-example.ts** - TypeScript CLI tool for generating standalone repositories
+- **generate-docs.ts** - Documentation generator from code annotations
+- Located in `scripts/` directory with comprehensive README
+
+### 2. Example Contract
+- **PredictionMarket.sol** - Well-documented Solidity contract demonstrating FHEVM concepts
+- Shows encrypted state variables, access control, input encryption
+- Located in `contracts/` directory
+
+### 3. Comprehensive Tests
+- **PredictionMarket.ts** - Full test suite with 100+ test cases
+- Includes correct usage examples (✅) and anti-patterns (❌)
+- Educational comments explaining FHEVM concepts
+- Located in `test/` directory
+
+### 4. Documentation
+- **docs/prediction-market.md** - Auto-generated comprehensive guide
+- **docs/SUMMARY.md** - GitBook navigation index
+- **DEVELOPER_GUIDE.md** - Developer guide for creating new examples
+- **scripts/README.md** - Automation tools documentation
+
+### 5. Base Template Structure
+- Minimal Hardhat configuration
+- FHEVM plugin setup
+- TypeScript configuration
+- Deployment scripts
+
+### 6. Demonstration
+- **Video**: `CONFIDENTIAL PREDICTION MARKET .mp4` - Complete demonstration
+- **Live Demo**: [https://confidential-prediction-market.vercel.app/](https://confidential-prediction-market.vercel.app/)
+- **Deployed Contract**: `0xdd3e74ad708CF61B14c83cF1826b5e3816e0de69` on Sepolia
+
+## Contact & Resources
 
 ### Project Links
 - **GitHub Repository**: [https://github.com/MarleyTerry/CONFIDENTIAL-PREDICTION-MARKET](https://github.com/MarleyTerry/CONFIDENTIAL-PREDICTION-MARKET)

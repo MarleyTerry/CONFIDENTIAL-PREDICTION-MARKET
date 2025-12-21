@@ -281,7 +281,7 @@ Before finalizing video:
 
 - **Script Version**: 1.0
 - **Last Updated**: 2025-12-07
-- **Author**: Claude Code for Zama FHEVM Bounty
+- **Author**: Zama FHEVM Bounty Submission
 - **Review Status**: Ready for production
 
 ---
